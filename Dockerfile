@@ -18,7 +18,7 @@ ENV KC_BOOTSTRAP_ADMIN_PASSWORD=admin
 EXPOSE 8080
 
 # Start Keycloak with the development profile
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start-dev"]
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start-dev", "--http-host=0.0.0.0"]
 
 #Dockerfile contents START
 
